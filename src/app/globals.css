@@ -6,7 +6,8 @@
 @theme {
   --font-playfair: var(--font-playfair);
   --color-primary-gold: #AB9D6E;
-  --color-primary-bg: #F7F4EF
+  --color-primary-bg: #F7F4EF;
+  --color-primary-light-glod: #EADAC1
 }
 
 @theme inline {

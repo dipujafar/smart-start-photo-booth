@@ -4,6 +4,7 @@ import BorderIcon from '../ui/border-icon';
 import PhotoBoothExperience from './PhotoBoothExperience/PhotoBoothExperience';
 import EventRentals from './EventRentals/EventRentals';
 import OurDedication from './OurDedication/OurDedication';
+import CustomersReviews from './CustomersReviews/CustomersReviews';
 
 const HomeContainer = () => {
     return (
@@ -16,6 +17,7 @@ const HomeContainer = () => {
             <BorderIcon></BorderIcon>
             <OurDedication></OurDedication>
             <BorderIcon></BorderIcon>
+            <CustomersReviews></CustomersReviews>
         </div>
     );
 };
