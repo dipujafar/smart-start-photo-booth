@@ -5,6 +5,7 @@ import PhotoBoothExperience from './PhotoBoothExperience/PhotoBoothExperience';
 import EventRentals from './EventRentals/EventRentals';
 import OurDedication from './OurDedication/OurDedication';
 import CustomersReviews from './CustomersReviews/CustomersReviews';
+import DiamondPackages from './DiamondPackages/DiamondPackages';
 
 const HomeContainer = () => {
     return (
@@ -18,6 +19,8 @@ const HomeContainer = () => {
             <OurDedication></OurDedication>
             <BorderIcon></BorderIcon>
             <CustomersReviews></CustomersReviews>
+            <BorderIcon></BorderIcon>
+            <DiamondPackages></DiamondPackages>
             <BorderIcon></BorderIcon>
         </div>
     );

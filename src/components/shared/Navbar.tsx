@@ -42,7 +42,7 @@ const Dropdown = ({ isOpen, items, onClose }: DropdownProps) => {
         <Link
           key={item.title}
           href={item.href}
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          className="block px-4 py-2 text-sm  hover:bg-gray-100"
           onClick={onClose}
         >
           {item.title}
@@ -84,7 +84,7 @@ const NavItem = ({
       <div className="relative">
         <button
           onClick={toggleDropdown}
-          className="flex w-full items-center justify-between px-4 py-2 text-left text-base font-medium text-gray-800"
+          className="flex w-full items-center justify-between px-4 py-2 text-left text-base font-medium "
         >
           {title}
           {hasDropdown && (
@@ -102,7 +102,7 @@ const NavItem = ({
               <Link
                 key={item.title}
                 href={item.href}
-                className="block py-2 text-sm text-gray-700 hover:text-gray-900"
+                className="block py-2 text-sm  hover:text-gray-900"
                 onClick={onClick}
               >
                 {item.title}
@@ -118,7 +118,7 @@ const NavItem = ({
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="flex items-center px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:text-gray-600"
+        className="flex items-center px-4 py-2 text-sm font-semibold  transition-colors hover:text-gray-600"
       >
         {title}
         {hasDropdown && (
@@ -147,13 +147,18 @@ export default function Navbar() {
 
   // Sample dropdown items
   const photoOpsItems = [
-    { title: "Home", href: "/" },
-    { title: "Subscription", href: "/#" },
+    { title: "Phone Ops", href: "/#" },
+    { title: "Packages", href: "/#" },
+    { title: "We Provided", href: "/#" },
   ];
 
-  const eventRentalsItems = [{ title: "events", href: "/events" }];
+  const eventRentalsItems = [  { title: "Phone Booth", href: "/#" },
+    { title: "Floral Backdrops", href: "/#" },
+    { title: "Backdrops", href: "/#" },];
 
-  const aboutUsItems = [{ title: "About", href: "/about" }];
+  const aboutUsItems = [ { title: "About Us", href: "/#" },
+    { title: "Meet Our Team", href: "/#" },
+    { title: "Contact Us", href: "/#" }];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -221,7 +226,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden items-center space-x-1 md:flex">
             <NavItem
-              title="Photo Ops"
+              title="Home"
               href="/photo-ops"
               dropdownItems={photoOpsItems}
             />
@@ -348,7 +353,7 @@ export default function Navbar() {
           <div className="max-h-[calc(100vh-4rem)] overflow-y-auto px-2 py-4">
             <div className="space-y-1">
               <NavItem
-                title="Photo Ops"
+                title="Home"
                 href="/photo-ops"
                 dropdownItems={photoOpsItems}
                 isMobile

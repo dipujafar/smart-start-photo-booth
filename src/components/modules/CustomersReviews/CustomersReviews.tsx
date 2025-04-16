@@ -69,10 +69,10 @@ const CustomersReviews = () => {
             {
                 customerReviews?.map(customerReview=><Card className='border-none max-w-md mx-4'>
                     <CardContent className='px-5'>
-                        <div className='flex gap-x-2'>
+                        <div className='flex gap-x-3'>
                             <Image src={customerReview?.image} alt='user_profile_image' width={1200} height={1200} className='size-10'></Image>
                             <div className='lg:space-y-2'>
-                                <h2>{customerReview?.name}</h2>
+                                <h2 className='font-semibold'>{customerReview?.name}</h2>
                                 <Rating rating={customerReview.rating}></Rating>
                                 <p>{customerReview?.comment}</p>
                             </div>
@@ -89,7 +89,7 @@ const CustomersReviews = () => {
                         <div className='flex gap-x-2'>
                             <Image src={customerReview?.image} alt='user_profile_image' width={1200} height={1200} className='size-10'></Image>
                             <div className='lg:space-y-2'>
-                                <h2>{customerReview?.name}</h2>
+                            <h2 className='font-semibold'>{customerReview?.name}</h2>
                                 <Rating rating={customerReview.rating}></Rating>
                                 <p>{customerReview?.comment}</p>
                             </div>
