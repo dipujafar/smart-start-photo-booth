@@ -1,10 +1,60 @@
 import Container from '@/components/shared/Container';
 import Sectiontitle from '@/components/shared/SectionTitle';
-import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Rating } from '@/components/ui/rating';
+import Image from 'next/image';
+import Marquee from "react-fast-marquee";
+
+
+
+const customerReviews = [
+    {
+        _id: 1,
+        image: "/userProfile.png",
+        name: "Savannah Nguyen",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque, cras cursus porttitor. Tempor magna eu faucibus in sit dui facilisis interdum viverra."
+    },
+    {
+        _id: 1,
+        image: "/userProfile.png",
+        name: "Savannah Nguyen",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque, cras cursus porttitor. Tempor magna eu faucibus in sit dui facilisis interdum viverra."
+    },
+    {
+        _id: 1,
+        image: "/userProfile.png",
+        name: "Savannah Nguyen",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque, cras cursus porttitor. Tempor magna eu faucibus in sit dui facilisis interdum viverra."
+    },
+    {
+        _id: 1,
+        image: "/userProfile.png",
+        name: "Savannah Nguyen",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque, cras cursus porttitor. Tempor magna eu faucibus in sit dui facilisis interdum viverra."
+    },
+    {
+        _id: 1,
+        image: "/userProfile.png",
+        name: "Savannah Nguyen",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque, cras cursus porttitor. Tempor magna eu faucibus in sit dui facilisis interdum viverra."
+    },
+    {
+        _id: 1,
+        image: "/userProfile.png",
+        name: "Savannah Nguyen",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque, cras cursus porttitor. Tempor magna eu faucibus in sit dui facilisis interdum viverra."
+    },
+]
 
 const CustomersReviews = () => {
     return (
-        <div className='bg-primary-light-glod py-24'>
+        <div className='bg-primary-light-glod py-24 lg:space-y-10 space-y-7'>
             <Container>
                 <div className='flex justify-center items-center gap-x-8'>
                     <FlowerIcon/>
@@ -15,7 +65,39 @@ const CustomersReviews = () => {
                 <FlowerIcon/>
                 </div>
             </Container>
-            
+            <Marquee pauseOnHover gradient gradientWidth={50} gradientColor={"#E0DAC9"} >
+            {
+                customerReviews?.map(customerReview=><Card className='border-none max-w-md mx-4'>
+                    <CardContent className='px-5'>
+                        <div className='flex gap-x-2'>
+                            <Image src={customerReview?.image} alt='user_profile_image' width={1200} height={1200} className='size-10'></Image>
+                            <div className='lg:space-y-2'>
+                                <h2>{customerReview?.name}</h2>
+                                <Rating rating={customerReview.rating}></Rating>
+                                <p>{customerReview?.comment}</p>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>)
+            }
+            </Marquee>
+            {/* ==================================== second part ======================= */}
+            <Marquee pauseOnHover gradient gradientWidth={50} gradientColor={"#E0DAC9"} speed={40} >
+            {
+                customerReviews?.map(customerReview=><Card className='border-none max-w-md mx-4'>
+                    <CardContent className='px-5'>
+                        <div className='flex gap-x-2'>
+                            <Image src={customerReview?.image} alt='user_profile_image' width={1200} height={1200} className='size-10'></Image>
+                            <div className='lg:space-y-2'>
+                                <h2>{customerReview?.name}</h2>
+                                <Rating rating={customerReview.rating}></Rating>
+                                <p>{customerReview?.comment}</p>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>)
+            }
+            </Marquee>
         </div>
     );
 };

@@ -18,6 +18,7 @@ const HomeContainer = () => {
             <OurDedication></OurDedication>
             <BorderIcon></BorderIcon>
             <CustomersReviews></CustomersReviews>
+            <BorderIcon></BorderIcon>
         </div>
     );
 };
