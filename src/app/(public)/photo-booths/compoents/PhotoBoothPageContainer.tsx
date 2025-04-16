@@ -8,6 +8,7 @@ const PhotoBoothPageContainer = () => {
       <PhotoBoothPromo></PhotoBoothPromo>
       <BorderIcon></BorderIcon>
       <WeProvided></WeProvided>
+      <BorderIcon></BorderIcon>
     </div>
   );
 };
