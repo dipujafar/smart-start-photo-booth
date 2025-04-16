@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.className} ${playfair.variable}  antialiased`}>
         <Navbar></Navbar>
-        <div className="min-h-[calc(100vh-140px)] md:pt-10 md:pb-16 pt-5 pb-8 bg-primary-bg ">
+        <div className="min-h-[calc(100vh-70px)] md:pt-10 md:pb-16 pt-5 pb-8 bg-primary-bg ">
           {children}
       </div>
       </body>

@@ -1,0 +1,27 @@
+import Sectiontitle from "@/components/shared/SectionTitle";
+import Image from "next/image";
+import flowerIcon3 from "@/assets/icons/flowericon3.png";
+import { FeatureGrid } from "./FeatureGrid";
+import Container from "@/components/shared/Container";
+const WeProvided = () => {
+  return (
+    <Container className="lg:space-y-10">
+      <div>
+        <div className="flex justify-center items-center gap-x-8">
+          <Image src={flowerIcon3} alt="flower_icon"></Image>
+          <div className="space-y-2">
+            <Sectiontitle title="What’s We Provided"></Sectiontitle>
+            <p className="text-center max-w-lg mx-auto">
+              Per ipsum ultrices sollicitudin iaculis platea facilisi semper
+              aliquam up senectus cursus vivamus volutpat penatibus
+            </p>
+          </div>
+          <Image src={flowerIcon3} alt="flower_icon"></Image>
+        </div>
+      </div>
+      <FeatureGrid></FeatureGrid>
+    </Container>
+  );
+};
+
+export default WeProvided;
