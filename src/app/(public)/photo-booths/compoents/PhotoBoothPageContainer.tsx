@@ -4,6 +4,8 @@ import WeProvided from "./WeProvided/WeProvided";
 import RentalProcessStepper from "./RentalProcessStepper";
 import Packages from "./Packages/Packages";
 import PopularCustomizations from "./PopularCustomizations";
+import StudioPhotos from "./StudioPhotos/StudioPhotos";
+
 
 const PhotoBoothPageContainer = () => {
   return (
@@ -14,6 +16,7 @@ const PhotoBoothPageContainer = () => {
       <Packages></Packages>
       <PopularCustomizations></PopularCustomizations>
       <BorderIcon></BorderIcon>
+      {/* <StudioPhotos></StudioPhotos> */}
       <WeProvided></WeProvided>
       <BorderIcon></BorderIcon>
     </div>
