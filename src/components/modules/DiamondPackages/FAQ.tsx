@@ -1,7 +1,6 @@
 "use client"
-import Sectiontitle from "@/components/shared/SectionTitle"
+import SectiontitleSmall from "@/components/shared/SectionTitleSmall"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { ChevronDown, ChevronUp } from "lucide-react"
 
 // FAQ data array with questions and answers
 const faqData = [
@@ -34,7 +33,7 @@ const faqData = [
 export default function FAQ() {
   return (
     <div>
-        <Sectiontitle title="Frequently Asked Questions"></Sectiontitle>
+        <SectiontitleSmall title="Frequently Asked Questions"></SectiontitleSmall>
     <div className="w-full max-w-6xl mx-auto mt-5">
       <Accordion type="single" collapsible className="w-full space-y-4 text-lg">
         {faqData.map((faq, index) => (

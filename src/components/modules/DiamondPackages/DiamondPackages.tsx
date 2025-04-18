@@ -25,8 +25,6 @@ const DiamondPackages = () => {
           <Image src={waterMarkFlower} alt="water_mark_flower"></Image>
         </div>
       </div>
-
-
       <FAQ></FAQ>
     </Container>
   );
