@@ -1,8 +1,9 @@
+import { cn } from '@/lib/utils';
 import React from 'react';
 
-const SectiontitleSmall = ({title, subTitle}: {title: string, subTitle?: string}) => {
+const SectiontitleSmall = ({title, subTitle, className}: {title: string, subTitle?: string,className?: string}) => {
     return (
-        <div className='text-center'>
+        <div className={cn('text-center', className)}>
             <h1 className='xl:text-7xl md:text-5xl text-3xl font-playfair font-bold '>{title}</h1>
             <h3 className='xl:text-5xl md:text-3xl text-xl font-playfair font-medium '>{subTitle}</h3>
             

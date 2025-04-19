@@ -1,6 +1,4 @@
-import React from "react";
 import SpinIcons from "./SpinIcons";
-import Sectiontitle from "@/components/shared/SectionTitle";
 import Container from "@/components/shared/Container";
 import SectiontitleSmall from "@/components/shared/SectionTitleSmall";
 
