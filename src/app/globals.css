@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 @theme {
   --font-playfair: var(--font-playfair);
   --color-primary-gold: #AB9D6E;
@@ -129,3 +135,4 @@
     @apply bg-background text-foreground;
   }
 }
+

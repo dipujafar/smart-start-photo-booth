@@ -147,9 +147,9 @@ export default function Navbar() {
 
   // Sample dropdown items
   const photoOpsItems = [
-    { title: "Phone Ops", href: "/#" },
-    { title: "Packages", href: "/#" },
-    { title: "We Provided", href: "/#" },
+    { title: "Phone Ops", href: "/photo-booths" },
+    { title: "Packages", href: "/photo-booths#package" },
+    { title: "We Provided",  href: "/photo-booths#weprovide" },
   ];
 
   const eventRentalsItems = [  { title: "Phone Booth", href: "/#" },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Playfair } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -28,11 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} ${playfair.variable}  antialiased`}>
+      <body
+        className={`${montserrat.className} ${playfair.variable}  antialiased`}
+      >
         <Navbar></Navbar>
         <div className="min-h-[calc(100vh-70px)] md:pt-10 md:pb-16 pt-5 pb-8 bg-primary-bg ">
           {children}
-      </div>
+        </div>
+        <Footer></Footer>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import Container from '@/components/shared/Container';
 const Packages = () => {
     return (
         <Container className='space-y-10'>
-            <SectiontitleSmall title='Smart start photobooth Packages'></SectiontitleSmall>
+            <SectiontitleSmall title='Smart start photobooth Packages' id='package'></SectiontitleSmall>
             <AllPackages></AllPackages>
         </Container>
     );

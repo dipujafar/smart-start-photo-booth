@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoBoothPageContainer from './compoents/PhotoBoothPageContainer';
+import PhotoBoothPageContainer from './components/PhotoBoothPageContainer';
 
 const PhotoBoothsPage = () => {
     return (
