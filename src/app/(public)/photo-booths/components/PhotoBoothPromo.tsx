@@ -11,7 +11,7 @@ export default function PhotoBoothPromo() {
 
         {/* Main Heading */}
         <div className="space-y-4 md:space-y-6">
-          <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold  leading-tight font-playfair">
+          <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold  leading-tight font-playfair">
             Join The Smart Start{" "}
             <span className="relative inline-block">
               <span className="absolute -left-6 top-1/2 transform -translate-y-1/2">

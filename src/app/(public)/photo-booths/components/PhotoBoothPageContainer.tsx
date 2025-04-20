@@ -13,11 +13,15 @@ const PhotoBoothPageContainer = () => {
   return (
     <div className="xl:space-y-16 md:space-y-10 space-y-8">
       <Container>
-      <div className="flex  justify-betweenl flex-col-reverse lg:flex-row gap-x-3 gap-y-5">
-        <PhotoBoothPromo></PhotoBoothPromo>
-        <PromoVideo></PromoVideo>
-      </div>
-      <QuickLiftNav></QuickLiftNav>
+        <div className="flex  justify-betweenl flex-col-reverse lg:flex-row gap-x-3 gap-y-5">
+          <div className="flex-1">
+            <PhotoBoothPromo></PhotoBoothPromo>
+          </div>
+          <div className="flex-1">
+            <PromoVideo></PromoVideo>
+          </div>
+        </div>
+        <QuickLiftNav></QuickLiftNav>
       </Container>
       <BorderIcon></BorderIcon>
       <RentalProcessStepper />
