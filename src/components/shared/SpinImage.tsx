@@ -1,9 +1,10 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 import { motion } from "motion/react"; 
+import { cn } from "@/lib/utils";
 
 
-const SpinImage = ({image}: {image: StaticImageData}) => {
+const SpinImage = ({image, className}: {image: StaticImageData, className?: string}) => {
     return (
         <motion.div
         animate={{ rotate: 360 }} // Rotate 360 degrees
@@ -14,7 +15,7 @@ const SpinImage = ({image}: {image: StaticImageData}) => {
             ease: "linear", // Smooth linear transition
         }}
     >
-        <Image src={image} alt="flower_icon" className="w-20 h-20" /> {/* Adjust size accordingly */}
+        <Image src={image} alt="flower_icon" className={cn("w-20 h-20", className)} /> {/* Adjust size accordingly */}
     </motion.div>
     );
 };
