@@ -12,7 +12,7 @@ export const AutoplayProgressDots: React.FC<Props> = ({
   colors = []
 }) => {
   return (
-    <div className="flex gap-2 justify-center items-center py-2">
+    <div className="flex gap-2 justify-center items-center pb-2">
       {Array.from({ length: dotCount }).map((_, index) => {
         const isActive = index <= activeIndex
         const color = colors[index % colors.length] || '#675004' // Tailwind gray-300 fallback

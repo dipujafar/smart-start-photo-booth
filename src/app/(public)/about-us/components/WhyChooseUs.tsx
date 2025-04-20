@@ -1,7 +1,7 @@
 import flowerIcon from "@/assets/icons/flowerIcon6.png";
 import Container from "@/components/shared/Container";
 import SectiontitleSmall from "@/components/shared/SectionTitleSmall";
-import { Check, Dot } from "lucide-react";
+import { Dot } from "lucide-react";
 import Image from "next/image";
 import whyChooseUsImage from "@/assets/images/whyChooseImage.png"
 

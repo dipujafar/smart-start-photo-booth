@@ -15,7 +15,8 @@ html {
   --color-primary-bg: #F7F4EF;
   --color-primary-light-glod: #EADAC1;
   --color-primary-pink: #FFF6F5;
-  --color-primary-gray: #57595C
+  --color-primary-gray: #57595C;
+  --color-primary-black: #1F1F1F;
 }
 
 @theme inline {

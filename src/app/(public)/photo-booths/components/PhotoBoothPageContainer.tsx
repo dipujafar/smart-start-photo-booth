@@ -21,6 +21,7 @@ const PhotoBoothPageContainer = () => {
       <PopularCustomizations></PopularCustomizations>
       <BorderIcon></BorderIcon>
       <StudioPhotos></StudioPhotos>
+      <BorderIcon></BorderIcon>
       <WeProvided></WeProvided>
       <BorderIcon></BorderIcon>
     </div>

@@ -40,7 +40,6 @@
   .embla__buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem;
     align-items: center;
   }
   .embla__button {

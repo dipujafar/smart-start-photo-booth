@@ -13,42 +13,42 @@ import Image from "next/image";
 const clothesData = [
   {
     _id: 1,
-    image: "/imagePreview1.png",
+    image: "/studio_photos1.png",
     text: "Our Work Is Our Playground",
   },
   {
     _id: 2,
-    image: "/imagePreview2.png",
+    image: "/studio_photos2.png",
     text: "Our Mission: To Give Back",
   },
   {
     _id: 3,
-    image: "/imagePreview3.png",
+    image: "/studio_photos3.png",
     text: "Our Creativity Is Continual",
   },
   {
     _id: 4,
-    image: "/imagePreview2.png",
+    image: "/studio_photos4.png",
     text: "Our Work Is Our Playground",
   },
   {
     _id: 5,
-    image: "/imagePreview1.png",
+    image: "/studio_photos5.png",
     text: "Our Creativity Is Continual",
   },
   {
     _id: 6,
-    image: "/imagePreview3.png",
+    image: "/studio_photos3.png",
     text: "Our Mission: To Give Back",
   },
   {
     _id: 7,
-    image: "/imagePreview2.png",
+    image: "/studio_photos1.png",
     text: "Our Creativity Is Continual",
   },
   {
     _id: 87,
-    image: "/imagePreview2.png",
+    image: "/studio_photos2.png",
     text: "Our Creativity Is Continual",
   },
 ];
@@ -56,7 +56,7 @@ const clothesData = [
 const StudioPhotos = () => {
   return (
     <div className="bg-[#EADAC1] lg:py-12 py-8">
-      <h5 className="text-center mb-10">
+      <h5 className="text-center xl:text-5xl lg:text-3xl text-xl  font-playfair mb-10 max-w-6xl font-bold mx-auto">
         Make every moment unforgettable with high-definition, studio photos
       </h5>
       <Carousel
@@ -78,7 +78,7 @@ const StudioPhotos = () => {
           {clothesData?.map((data, index) => (
             <CarouselItem
               key={data?._id}
-              className={cn("md:basis-1/2  lg:basis-1/3 2xl:basis-1/4")}
+              className={cn("md:basis-1/2  lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5")}
             >
               <div className="w-full   px-8 relative group  ">
                 <h5
