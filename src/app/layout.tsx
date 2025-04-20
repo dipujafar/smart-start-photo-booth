@@ -39,7 +39,9 @@ export default function RootLayout({
         <div className="min-h-[calc(100vh-70px)] md:pt-10 md:pb-16 pt-5 pb-8 bg-primary-bg ">
           {children}
         </div>
-        <Footer></Footer>
+        <div className="bg-primary-bg">
+          <Footer></Footer>
+        </div>
       </body>
     </html>
   );
