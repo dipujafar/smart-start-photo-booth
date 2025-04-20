@@ -152,13 +152,13 @@ export default function Navbar() {
     { title: "We Provided",  href: "/photo-booths#weprovide" },
   ];
 
-  const eventRentalsItems = [  { title: "Phone Booth", href: "/#" },
-    { title: "Floral Backdrops", href: "/#" },
-    { title: "Backdrops", href: "/#" },];
+  const eventRentalsItems = [  { title: "Photo Booth", href: "/event" },
+    { title: "Connect", href: "/event#booking" },
+    { title: "Backdrops", href: "/rent" },];
 
-  const aboutUsItems = [ { title: "About Us", href: "/#" },
-    { title: "Meet Our Team", href: "/#" },
-    { title: "Contact Us", href: "/#" }];
+  const aboutUsItems = [ { title: "About Us", href: "/about-us" },
+    { title: "Meet Our Team", href: "/about-us#meet-team" },
+    { title: "Contact Us", href: "/contact" }];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -235,7 +235,7 @@ export default function Navbar() {
               href="/event-rentals"
               dropdownItems={eventRentalsItems}
             />
-            <Link href={"#"} className=" text-sm font-semibold">
+            <Link href={"/about-us#why-choose-us"} className=" text-sm font-semibold">
               Why choose Us
             </Link>
             <NavItem
@@ -248,7 +248,7 @@ export default function Navbar() {
           {/* Book Now Button */}
           <div className="hidden md:block">
             <Link
-              href="/book"
+              href="/event#booking"
               className="rounded-3xl bg-primary-gold px-6 py-4 text-sm font-medium uppercase text-white transition-colors hover:bg-[#b1a475]"
             >
               Book Now
@@ -367,7 +367,7 @@ export default function Navbar() {
                 onClick={closeMobileMenu}
               />
               <Link
-                href={"#"}
+               href={"/about-us#why-choose-us"}
                 className=" font-medium mx-4"
                 onClick={closeMobileMenu}
               >
@@ -383,7 +383,7 @@ export default function Navbar() {
             </div>
             <div className="mt-6 px-2">
               <Link
-                href="/#"
+                href="/event#booking"
                 className="block w-full rounded bg-[#c0b283] px-4 py-3 text-center text-sm font-medium uppercase text-white"
                 onClick={closeMobileMenu}
               >

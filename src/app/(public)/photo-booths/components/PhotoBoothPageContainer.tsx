@@ -7,13 +7,17 @@ import PopularCustomizations from "./PopularCustomizations";
 import StudioPhotos from "./StudioPhotos/StudioPhotos";
 import PromoVideo from "./PromoVideo";
 import Container from "@/components/shared/Container";
+import QuickLiftNav from "./QuickLiftNav";
 
 const PhotoBoothPageContainer = () => {
   return (
     <div className="xl:space-y-16 md:space-y-10 space-y-8">
-      <Container className="flex  justify-betweenl flex-col-reverse lg:flex-row">
+      <Container>
+      <div className="flex  justify-betweenl flex-col-reverse lg:flex-row gap-x-3 gap-y-5">
         <PhotoBoothPromo></PhotoBoothPromo>
         <PromoVideo></PromoVideo>
+      </div>
+      <QuickLiftNav></QuickLiftNav>
       </Container>
       <BorderIcon></BorderIcon>
       <RentalProcessStepper />

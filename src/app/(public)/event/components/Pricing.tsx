@@ -16,7 +16,7 @@ const Pricing = () => {
     <Container className="2xl:w-[75%]">
       <div className="flex justify-center items-center gap-x-8 flex-row gap-y-5">
         <Image src={flowerIcon} alt="flowerIconImage"></Image>
-        <SectiontitleSmall title="Pricing"></SectiontitleSmall>
+        <SectiontitleSmall title="Pricing" id="pricing"></SectiontitleSmall>
         <Image src={flowerIcon} alt="flowerIconImage"></Image>
       </div>
       <div className="lg:mt-10 mt-7 flex flex-col lg:flex-row gap-x-4 gap-y-5 ">

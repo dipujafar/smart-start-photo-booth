@@ -8,7 +8,7 @@ export default function Team() {
     <div className="bg-[#EADAC1]">
       <Container className=" py-12 2xl:w-[80%]">
         {/* header */}
-        <div className="text-center mb-10 xl:mb-20 space-y-1 font-playfair">
+        <div className="text-center mb-10 xl:mb-20 space-y-1 font-playfair" id="meet-team">
           <div className="relative w-full flex items-center justify-center text-center md:gap-x-6 gap-x-3 ">
             <div className="h-1 rounded-xl md:w-16 w-8 bg-linear-to-r from-[#AB9D6E] to-[#564920] "></div>
             <h2 className="text-2xl md:text-5xl font-semibold  mb-2 flex items-center justify-center ">

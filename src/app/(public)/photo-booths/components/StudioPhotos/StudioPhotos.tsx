@@ -56,7 +56,7 @@ const clothesData = [
 const StudioPhotos = () => {
   return (
     <div className="bg-[#EADAC1] lg:py-12 py-8">
-      <h5 className="text-center xl:text-5xl lg:text-3xl text-xl  font-playfair mb-10 max-w-6xl font-bold mx-auto">
+      <h5 id="photo" className="text-center xl:text-5xl lg:text-3xl text-xl  font-playfair mb-10 max-w-6xl font-bold mx-auto">
         Make every moment unforgettable with high-definition, studio photos
       </h5>
       <Carousel

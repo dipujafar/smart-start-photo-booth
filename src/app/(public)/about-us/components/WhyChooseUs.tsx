@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
     <Container>
       <div className="flex justify-center items-center gap-x-8 flex-col lg:flex-row gap-y-5">
         <Image src={flowerIcon} alt="flowerIconImage"></Image>
-        <SectiontitleSmall title="Why Choose Us?"></SectiontitleSmall>
+        <SectiontitleSmall title="Why Choose Us?" id="why-choose-us"></SectiontitleSmall>
         <Image src={flowerIcon} alt="flowerIconImage"></Image>
       </div>
 

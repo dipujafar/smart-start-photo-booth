@@ -33,7 +33,7 @@ const faqData = [
 export default function FAQ() {
   return (
     <div>
-        <SectiontitleSmall title="Frequently Asked Questions"></SectiontitleSmall>
+        <SectiontitleSmall title="Frequently Asked Questions" id="faq"></SectiontitleSmall>
     <div className="w-full max-w-6xl mx-auto mt-5">
       <Accordion type="single" collapsible className="w-full space-y-4 text-lg">
         {faqData.map((faq, index) => (

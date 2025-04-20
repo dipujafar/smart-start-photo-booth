@@ -2,7 +2,7 @@ import { Check } from "lucide-react"
 
 export default function PhotoBoothPromo() {
   return (
-    <div className=" p-4 md:p-8 lg:p-12 max-w-4xl mx-auto">
+    <div>
       <div className="space-y-6 md:space-y-8">
         {/* Breadcrumb */}
         <div className="text-xs md:text-sm uppercase tracking-wider ">

@@ -7,7 +7,7 @@ const Connect = () => {
     <div>
       {/* ========== header ============== */}
       <div className="space-y-3">
-        <SectiontitleSmall title="Excited to party? Let's connect!"></SectiontitleSmall>
+        <SectiontitleSmall title="Excited to party? Let's connect!" id="booking"></SectiontitleSmall>
         <p className="max-w-3xl text-center mx-auto text-lg text-gray-600">
           We appreciate your interest in our photobooth services! Please fill
           out this form and it will be sent directly to our e-mail. We'll
