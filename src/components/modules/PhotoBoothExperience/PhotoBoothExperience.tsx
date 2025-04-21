@@ -23,7 +23,7 @@ const sectionImage = [
 const PhotoBoothExperience = () => {
     return (
         <Container className='lg:space-y-10 space-y-8'>
-            <Sectiontitle title='Discover Your' subTitle='Ideal Photo Booth Experience'></Sectiontitle>
+            <Sectiontitle title='Discover Your' subTitle='Ideal Photobooth Experience'></Sectiontitle>
 
             <PhotoCarousel slides={sectionImage} options={OPTIONS}></PhotoCarousel>
         </Container>

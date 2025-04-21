@@ -19,7 +19,7 @@ export default function LondonPhotoBoothPromo() {
         {/* Main Heading */}
         <div className="space-y-4 md:space-y-6">
           <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold  leading-tight font-playfair">
-            London Photobooth
+            London Phonebooth
           </h1>
         </div>
 

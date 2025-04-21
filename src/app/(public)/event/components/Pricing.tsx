@@ -84,7 +84,7 @@ const Pricing = () => {
                 Book Online <CalenderIcon></CalenderIcon>
               </Button>
               <p className="text-xl font-medium  px-2">
-                Pricing Based On A 45 Mile Radius From Downtown Detroit,
+                Pricing Based On A 45 Mile Radius From Bowie, Maryland,
                 Michigan
               </p>
             </CardFooter>
@@ -109,9 +109,9 @@ function CalenderIcon() {
       <path
         d="M8.76676 7.33968V3.60635M16.2334 7.33968V3.60635M7.83343 11.073H17.1668M5.96676 20.4063H19.0334C20.0644 20.4063 20.9001 19.5706 20.9001 18.5397V7.33968C20.9001 6.30875 20.0644 5.47301 19.0334 5.47301H5.96676C4.93583 5.47301 4.1001 6.30875 4.1001 7.33968V18.5397C4.1001 19.5706 4.93583 20.4063 5.96676 20.4063Z"
         stroke="white"
-        stroke-width="1.67"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.67"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

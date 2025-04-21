@@ -3,7 +3,7 @@ import PricingCard from "@/components/ui/pricing-card"
 // Sample data array for packages
 const pricingPackages = [
   {
-    title: "Diamond Packages",
+    title: "Diamond Package",
     subtitle: "Customizable Booths tailored to your theme and vibe",
     price: "900",
     buttonText: "Book Now",

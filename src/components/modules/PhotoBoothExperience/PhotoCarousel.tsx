@@ -55,31 +55,31 @@ const PhotoCarousel: React.FC<PropType> = (props) => {
   const features = [
     {
       description:
-        "1. High-Quality Portraits Crisp, studio-style portraits with stunning clarity",
+        "1. High-Quality Portraits – Crisp, studio-style photos with stunning clarity.",
     },
     {
       description:
-        "2. Pro-Grade Camera & Lighting Equipped with DSLR cameras and premium lighting setups",
+        "2. Professional-Grade Camera & Lighting – Equipped with DSLR cameras and premium lighting setups.",
     },
     {
       description:
-        "3. Perfect for All Occasions Ideal for weddings, parties, corporate events, and more",
+        "3.Perfect for Any Occasion – Ideal for weddings, parties, corporate events, and more.",
     },
     {
       description:
-        "4. Group-Friendly Framing Spacious booth layout—fit in the whole squad!",
+        "4. Group-Friendly Framing – Spacious booth layout that fits the whole squad.",
     },
     {
       description:
-        "5. Instant Prints & Digital Copies Get your photos printed or sent to your phone in seconds",
+        "5. Instant Prints & Digital Copies – Get your photos printed or sent to your phone in seconds.",
     },
     {
       description:
-        "6. Fully Customizable Themes Match the booth design to your event’s vibe or brand",
+        "6.  Fully Customizable Themes – Match the booth design to your event’s vibe or brand.",
     },
     {
       description:
-        "7. Easy to Use, Fun to Experience Just tap and pose—no setup needed!",
+        "7. Easy to Use, Fun to Experience – Just tap and pose—no setup required.",
     },
     {
       description:
@@ -90,7 +90,7 @@ const PhotoCarousel: React.FC<PropType> = (props) => {
   return (
     <div className="embla">
       <div className=" flex justify-between flex-col md:flex-row items-center md:items-start">
-        <h2 className="text-2xl font-bold">Up Coming Photo</h2>
+       <h2></h2>
 
         <div>
           <div className="embla__buttons">
@@ -141,10 +141,10 @@ const PhotoCarousel: React.FC<PropType> = (props) => {
         <div className="mt-10 xl:px-16 px-5">
           <div>
             <SectiontitleSmall
-              title="The Smart start photobooth "
+              title="The Smart Start Photobooth "
               className="text-start"
             ></SectiontitleSmall>
-            <h1 className="text-2xl text-primary-black">Starting at $1,100</h1>
+            {/* <h1 className="text-2xl text-primary-black">Starting at $1,100</h1> */}
           </div>
 
           <div className="mt-10">

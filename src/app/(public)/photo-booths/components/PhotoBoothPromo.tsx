@@ -21,7 +21,7 @@ export default function PhotoBoothPromo() {
             Join The Smart Start{" "}
             <span className="relative inline-block">
               <span className="absolute -left-6 top-1/2 transform -translate-y-1/2"></span>
-              Photo Booth
+              Photobooth
             </span>{" "}
             Family
           </h1>

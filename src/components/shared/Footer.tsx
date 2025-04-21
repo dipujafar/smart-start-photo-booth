@@ -51,16 +51,16 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-x-5 md:mt-10 mt-7">
-                <div className="bg-white p-2 rounded-full">
-                    <Link href={"#"}>
-                    <Facebook color="#B78242" fill="#B78242"></Facebook>
-                    </Link>
-                </div>
-                <div className="bg-white p-2 rounded-full">
-                    <Link href={"#"}>
-                    <Instagram color="#B78242" ></Instagram>
-                    </Link>
-                </div>
+              <div className="bg-white p-2 rounded-full">
+                <Link href={"#"}>
+                  <Facebook color="#B78242" fill="#B78242"></Facebook>
+                </Link>
+              </div>
+              <div className="bg-white p-2 rounded-full">
+                <Link href={"#"}>
+                  <Instagram color="#B78242"></Instagram>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -90,15 +90,38 @@ const Footer = () => {
             <div className="">
               <h3 className="mb-4 font-semibold text-[#AB9D6E]">Contact Us</h3>
               <ul className="space-y-3 text-primary-white">
-                <li>
-                 <p className="max-w-[250px]"> <span className="font-semibold">Address: </span>  3005 Meadowview
-                 Drive Gordons, VA 22942</p>
+                {/* <li>
+                  <p className="max-w-[250px]">
+                    {" "}
+                    <span className="font-semibold">Address: </span> 3 3005
+                    Meadowview Drive Gordons, VA 22942
+                  </p>
+                </li> */}
+                <li className="flex gap-x-2">
+                  <p className="max-w-[250px]">
+                    {" "}
+                    <span className="font-semibold">Phone: </span>{" "}
+                  </p>
+                  <div>
+                    <p>
+                    <Link href={"tel: +1 (215) 840-8190"}>
+                      +1 (215) 840-8190,
+                    </Link>
+                    </p>
+                    <p>
+                    <Link href={"tel: +1 (240)-755-1323"}>
+                      +1 (240)-755-1323.
+                    </Link></p>
+                  </div>
                 </li>
                 <li>
-                <p className="max-w-[250px]"> <span className="font-semibold">Phone: </span> <Link href={"tel: (248) 505 1234"}> (248) 505 1234</Link></p>
-                </li>
-                <li>
-                <p className="max-w-[250px]"> <span className="font-semibold">Email: </span> <Link href={"mailto:you@gmail.com"}>you@gmail.com</Link></p>
+                  <p className="flex flex-wrap gap-x-2">
+                    
+                    <span className="font-semibold">Email: </span>{" "}
+                    <Link href={"mailto:you@gmail.com"}>
+                      smartstartphoto1@gmail.com
+                    </Link>
+                  </p>
                 </li>
               </ul>
             </div>
@@ -106,7 +129,7 @@ const Footer = () => {
             {/* Support Information */}
             <div>
               <h3 className="mb-4 font-semibold text-[#AB9D6E]">Direction</h3>
-            <LocationMap></LocationMap>
+              <LocationMap></LocationMap>
             </div>
           </div>
         </div>
@@ -152,17 +175,18 @@ const Footer = () => {
         <hr className="border-gray-400" />
 
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
-          <h4 className="text-[#AB9D6E]">© Copyright 2025 | All Rights Reserved </h4>
-         
-            <ul className="flex gap-x-5 md:gap-x-8">
-                <li>
-                    <Link href={"/privacy-policy"}>Privacy policy</Link>
-                </li>
-                <li>
-                    <Link href={"/terms-service"}>Terms of service</Link>
-                </li>
-            </ul>
-         
+          <h4 className="text-[#AB9D6E]">
+            © Copyright 2025 | All Rights Reserved{" "}
+          </h4>
+
+          <ul className="flex gap-x-5 md:gap-x-8">
+            <li>
+              <Link href={"/privacy-policy"}>Privacy policy</Link>
+            </li>
+            <li>
+              <Link href={"/terms-service"}>Terms of service</Link>
+            </li>
+          </ul>
         </div>
       </Container>
     </div>

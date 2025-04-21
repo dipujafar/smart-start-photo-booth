@@ -11,7 +11,7 @@ const WeProvided = () => {
         <div className="flex justify-center items-center gap-x-8 flex-col lg:flex-row gap-y-5">
           <FlowerSpain></FlowerSpain>
           <div className="space-y-2">
-            <Sectiontitle   title="What’s We Provided" id="weprovide"></Sectiontitle>
+            <Sectiontitle   title="What We Provide" id="weprovide"></Sectiontitle>
             <p className="text-center max-w-lg mx-auto">
               Per ipsum ultrices sollicitudin iaculis platea facilisi semper
               aliquam up senectus cursus vivamus volutpat penatibus

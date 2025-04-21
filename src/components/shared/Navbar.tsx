@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Container from "./Container";
 import logo from "@/assets/images/logo.png";
@@ -60,12 +60,7 @@ type NavItemProps = {
   onClick?: () => void;
 };
 
-const NavItem = ({
-  title,
-  dropdownItems,
-  isMobile = false,
-  onClick,
-}: NavItemProps) => {
+const NavItem = ({ title, dropdownItems, isMobile = false }: NavItemProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const hasDropdown = dropdownItems && dropdownItems.length > 0;
 
@@ -99,9 +94,7 @@ const NavItem = ({
 
       {/* Desktop hover dropdown */}
       {hasDropdown && !isMobile && (
-        <div
-          className="absolute left-0 hidden  space-y-1 w-48 bg-white rounded-md shadow-lg group-hover:block"
-        >
+        <div className="absolute left-0 hidden  space-y-1 w-48 bg-white rounded-md shadow-lg group-hover:block">
           {dropdownItems.map((item) => (
             <Link
               key={item.title}
@@ -132,16 +125,14 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   // Sample dropdown items
-  const photoOpsItems = [
-    { title: "Phone Ops", href: "/photo-booths" },
-    { title: "Packages", href: "/photo-booths#package" },
-    { title: "We Provided", href: "/photo-booths#weprovide" },
-  ];
 
   const eventRentalsItems = [
-    { title: "Photo Booth", href: "/event" },
+    { title: "Photobooth", href: "/photo-booths" },
+    { title: "Phonebooth", href: "/event" },
+    { title: "Packages", href: "/photo-booths#package" },
     { title: "Connect", href: "/event#booking" },
     { title: "Backdrops", href: "/rent" },
+  
   ];
 
   const aboutUsItems = [
@@ -200,17 +191,18 @@ export default function Navbar() {
             </div>
 
             <nav className="hidden items-center space-x-1 md:flex">
-              <NavItem
-                title="Home"
-                href="/photo-ops"
-                dropdownItems={photoOpsItems}
-              />
+              <Link href={"/"} className="text-sm font-semibold">
+                Home
+              </Link>
               <NavItem
                 title="Event Rentals"
                 href="/event-rentals"
                 dropdownItems={eventRentalsItems}
               />
-              <Link href={"/about-us#why-choose-us"} className="text-sm font-semibold">
+              <Link
+                href={"/about-us#why-choose-us"}
+                className="text-sm font-semibold"
+              >
                 Why choose Us
               </Link>
               <NavItem
@@ -277,7 +269,11 @@ export default function Navbar() {
             )}
           >
             <div className="flex h-16 items-center justify-between border-b border-gray-100 px-4">
-              <Link href="/" className="flex items-center" onClick={closeMobileMenu}>
+              <Link
+                href="/"
+                className="flex items-center"
+                onClick={closeMobileMenu}
+              >
                 <Image
                   src={logo}
                   alt="Sharpshooters Logo"
@@ -318,13 +314,13 @@ export default function Navbar() {
             </div>
             <div className="max-h-[calc(100vh-4rem)] overflow-y-auto px-2 py-4">
               <div className="space-y-1">
-                <NavItem
-                  title="Home"
-                  href="/photo-ops"
-                  dropdownItems={photoOpsItems}
-                  isMobile
+                <Link
+                  href={"/"}
+                  className="font-medium mx-4"
                   onClick={closeMobileMenu}
-                />
+                >
+                  Home
+                </Link>
                 <NavItem
                   title="Event Rentals"
                   href="/event-rentals"
