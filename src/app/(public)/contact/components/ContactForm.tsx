@@ -15,8 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { ChevronsRight, MoveRight, Upload } from "lucide-react";
-import Image from "next/image";
+import { ChevronsRight } from "lucide-react";
 import { useState } from "react";
 import { PhoneInput } from "@/components/ui/phone-input";
 
@@ -35,21 +34,21 @@ const formSchema = z.object({
   message: z
     .string()
     .min(5, { message: "Message must be at least 5 characters" }),
-  image: z
-    .instanceof(FileList)
-    .refine((files) => files.length > 0, { message: "Image is required" })
-    .refine((files) => files[0].size <= 5 * 1024 * 1024, {
-      message: "Image must be less than 5MB",
-    })
-    .refine(
-      (files) =>
-        ["image/jpeg", "image/jpg", "image/png", "image/webp"].includes(
-          files[0].type
-        ),
-      {
-        message: "Only .jpg, .jpeg, .png and .webp formats are supported",
-      }
-    ),
+//   image: z
+//     .instanceof(FileList)
+//     .refine((files) => files.length > 0, { message: "Image is required" })
+//     .refine((files) => files[0].size <= 5 * 1024 * 1024, {
+//       message: "Image must be less than 5MB",
+//     })
+//     .refine(
+//       (files) =>
+//         ["image/jpeg", "image/jpg", "image/png", "image/webp"].includes(
+//           files[0].type
+//         ),
+//       {
+//         message: "Only .jpg, .jpeg, .png and .webp formats are supported",
+//       }
+//     ),
 });
 
 const ContactForm = () => {
@@ -85,14 +84,14 @@ const ContactForm = () => {
     formData.append("email", data.email);
     formData.append("phone", data.phoneNumber);
     formData.append("message", data.message);
-    formData.append("image", data.image[0]);
+    // formData.append("image", data.image[0]);
 
     console.log("Form data to submit:", {
       name: data.name,
       email: data.email,
       phone: data.phoneNumber,
       message: data.message,
-      imageFile: data.image[0].name,
+    //   imageFile: data.image[0].name,
     });
 
     // Here you would typically send the formData to your server

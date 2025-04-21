@@ -1,10 +1,11 @@
 import SectiontitleSmall from "@/components/shared/SectionTitleSmall";
 import React from "react";
 import EventBookingForm from "./EventBookingForm";
+import Container from "@/components/shared/Container";
 
 const Connect = () => {
   return (
-    <div>
+    <Container>
       {/* ========== header ============== */}
       <div className="space-y-3">
         <SectiontitleSmall title="Excited to party? Let's connect!" id="booking"></SectiontitleSmall>
@@ -19,7 +20,7 @@ const Connect = () => {
       <div>
         <EventBookingForm></EventBookingForm>
       </div>
-    </div>
+    </Container>
   );
 };
 

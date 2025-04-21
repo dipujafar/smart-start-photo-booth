@@ -21,7 +21,7 @@ const pricingPackages = [
 
 export default function DiamondPackagesFeatures() {
   return (
-      <div >
+      <div className="w-fit mx-auto">
         {pricingPackages.map((pkg, index) => (
           <PricingCard
             key={index}

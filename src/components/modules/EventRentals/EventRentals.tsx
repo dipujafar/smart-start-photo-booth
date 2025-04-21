@@ -7,8 +7,8 @@ const EventRentals = () => {
   return (
     <Container className="lg:space-y-10 space-y-8">
       <Sectiontitle title="Trendy Modern Event Rentals"></Sectiontitle>
-      <div className="text-center">
-        <h4 className="text-3xl font-bold">WELCOME</h4>
+      <div className="md:text-center">
+        <h4 className="lg:text-3xl text-xl font-bold text-center">WELCOME</h4>
         <p className="">
           We are Smart Photobooths,  A South Jersey based Open-Air styled
           photobooth, Our lux booth literally wraps all your favorite social
@@ -22,8 +22,8 @@ const EventRentals = () => {
       <div>
         <div className="space-y-4 border rounded-md border-primary-gold p-5">
           <EventRentalsPreview></EventRentalsPreview>
-          <div className="flex justify-between items-center gap-x-2 ">
-            <h3 className="text-4xl font-medium">An Elevated Photobooth Experience!</h3>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-y-1.5 gap-x-2 ">
+            <h3 className="xl:text-4xl md:text-2xl font-medium">An Elevated Photobooth Experience!</h3>
             <Button className="py-6 text-xl px-8 rounded-full bg-primary-gold">
             View Packages
             </Button>

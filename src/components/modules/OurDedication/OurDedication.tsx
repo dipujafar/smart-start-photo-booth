@@ -8,7 +8,7 @@ import FeatureCards from "./FeatureCards";
 const OurDedication = () => {
   return (
     <Container>
-      <div className="flex justify-center items-center gap-x-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-x-8">
         <Image src={flowerIcon1} alt="flower_icon"></Image>
         <Sectiontitle title="Our Dedication"></Sectiontitle>
         <Image src={flowerIcon2} alt="flower_icon"></Image>

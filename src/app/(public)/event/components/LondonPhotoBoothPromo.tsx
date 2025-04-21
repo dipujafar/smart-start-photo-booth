@@ -1,5 +1,11 @@
+"use client";
 import { Check } from "lucide-react";
 import LondonPhotoQuickLiftNav from "./LondonPhotoQuickLiftNav";
+import { motion } from "motion/react";
+import {
+  childrenVariants,
+  parentVariants,
+} from "@/animation/FramerMotionValiants";
 
 export default function LondonPhotoBoothPromo() {
   return (
@@ -22,16 +28,31 @@ export default function LondonPhotoBoothPromo() {
           <h4 className="lg:text-xl text-lg font-bold">
             London style phone booth
           </h4>
-          <FeatureItem text="Delivery & Installation" />
-          <FeatureItem text="Recording Unlimited Messages" />
-          <FeatureItem text="Listen to Messages Online" />
+          <motion.div
+            variants={parentVariants}
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            viewport={{ once: true }}
+            className="space-y-3"
+          >
+            <motion.div variants={childrenVariants}>
+              <FeatureItem text="Delivery & Installation" />
+            </motion.div>
+            <motion.div variants={childrenVariants}>
+              <FeatureItem text="Recording Unlimited Messages" />
+            </motion.div>
+            <motion.div variants={childrenVariants}>
+              <FeatureItem text="Listen to Messages Online" />
+            </motion.div>
+          </motion.div>
         </div>
 
         {/* flower icons */}
-        <div className="xl:flex justify-between lg:hidden">
-            {
-                [1,2,3,4]?.map(_=><FlowerIcon></FlowerIcon>)
-            }
+        <div className="xl:flex justify-between hidden">
+          {[1, 2, 3, 4]?.map((_) => (
+            <FlowerIcon></FlowerIcon>
+          ))}
         </div>
 
         {/* QuickLiftNav */}

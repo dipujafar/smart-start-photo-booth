@@ -19,7 +19,7 @@ const Footer = () => {
         {/* =============== footer content ======================= */}
         <div className="flex flex-col flex-wrap xl:justify-between justify-center gap-y-10  md:flex-row  items-start md:gap-x-20 gap-x-3">
           {/* Logo and description */}
-          <div>
+          <div className="flex flex-col xl:items-start items-center">
             <div className="relative ">
               <div>
                 <Image
@@ -30,7 +30,7 @@ const Footer = () => {
                   className="w-auto h-auto =
                   "
                 />
-                <div className="ml-2 flex flex-col sm:ml-3 font-playfair">
+                <div className="ml-2 flex flex-col sm:ml-3 font-playfair text-center mt-1">
                   <span className=" font-bold uppercase tracking-wider  ">
                     Sharpshooters of the
                   </span>
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           {/* Links and supports informations */}
-          <div className="flex justify-between flex-wrap flex-1 gap-5">
+          <div className="flex justify-between  flex-wrap flex-1 gap-5">
             {/* Account Links */}
             <div>
               <h3 className="mb-4 font-semibold text-[#AB9D6E]">Useful Link</h3>
@@ -156,10 +156,10 @@ const Footer = () => {
          
             <ul className="flex gap-x-5 md:gap-x-8">
                 <li>
-                    <Link href={"#"}>Privacy policy</Link>
+                    <Link href={"/privacy-policy"}>Privacy policy</Link>
                 </li>
                 <li>
-                    <Link href={"#"}>Terms of service</Link>
+                    <Link href={"/terms-service"}>Terms of service</Link>
                 </li>
             </ul>
          

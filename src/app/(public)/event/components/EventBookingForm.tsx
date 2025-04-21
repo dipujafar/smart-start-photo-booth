@@ -74,7 +74,7 @@ export default function EventBookingForm() {
 
   return (
     <Container className="2xl:w-[80%] lg:mt-10 mt-7">
-        <div className="w-full  mx-auto p-6 rounded-lg bg-[#AB9D6E]">
+        <div className="w-full  mx-auto md:p-6 p-3 rounded-lg bg-[#AB9D6E]">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
@@ -344,7 +344,7 @@ export default function EventBookingForm() {
             </Button>
           </div>
 
-          <p className="text-lg  mt-4">
+          <p className="md:text-lg  mt-4 text-white">
             This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
           </p>
         </form>

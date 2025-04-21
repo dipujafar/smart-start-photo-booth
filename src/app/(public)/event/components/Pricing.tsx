@@ -1,3 +1,4 @@
+"use client"
 import flowerIcon from "@/assets/icons/flowerIcon6.png";
 import SectiontitleSmall from "@/components/shared/SectionTitleSmall";
 import Image from "next/image";
@@ -11,6 +12,11 @@ import {
 } from "@/components/ui/card";
 import diplayImage from "@/assets/images/pricingPageDisplayImage.png";
 import Container from "@/components/shared/Container";
+import { motion } from "motion/react";
+import {
+  childrenVariants,
+  parentVariants,
+} from "@/animation/FramerMotionValiants";
 const Pricing = () => {
   return (
     <Container className="2xl:w-[75%]">
@@ -22,7 +28,11 @@ const Pricing = () => {
       <div className="lg:mt-10 mt-7 flex flex-col lg:flex-row gap-x-4 gap-y-5 ">
         {/* =========== display Image ============== */}
         <div className="flex-1">
-          <Image src={diplayImage} alt="display_image" className="h-full"></Image>
+          <Image
+            src={diplayImage}
+            alt="display_image"
+            className="h-full"
+          ></Image>
         </div>
         {/* ========================= features ====================== */}
         <div className="flex-1">
@@ -36,7 +46,14 @@ const Pricing = () => {
               </p>
             </CardHeader>
             <CardContent className="space-y-2 pb-4">
-              <ul className="space-y-1 sm:space-y-2">
+              <motion.ul
+                variants={parentVariants}
+                initial="initial"
+                whileInView="animate"
+                exit="exit"
+                viewport={{ once: true }}
+                className="space-y-1 sm:space-y-2"
+              >
                 {[
                   "Delivery & Installation",
                   "Record Messages All Day",
@@ -44,15 +61,16 @@ const Pricing = () => {
                   "Audiograms with Custom Photo",
                   "Download All Messages Online",
                 ].map((feature, index) => (
-                  <li
+                  <motion.li
                     key={index}
+                    variants={childrenVariants}
                     className="flex items-center gap-2 text-sm sm:text-base"
                   >
                     <Check className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                     <span>{feature}</span>
-                  </li>
+                  </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
 
               <div className="pt-4">
                 <p className="text-sm sm:text-base font-semibold">PRICE</p>

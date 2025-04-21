@@ -11,14 +11,14 @@ const DiamondPackages = () => {
       <div className="relative">
         <div className="bg-[#83795B] py-20 lg:px-10 px-7 space-y-5 text-white rounded-xl">
           <h4 className="lg:text-5xl text-2xl font-bold">Diamond Packages</h4>
-          <p className="lg:text-xl text-lg font-semibold">
+          <p className="lg:text-xl md:text-lg font-semibold">
             Customizable Booths tailored to your theme and vibe
           </p>
           <Button className="py-6 w-[220px] bg-[#AB9D6E] hover:bg-gray-700 border-b border-r border-white">
             Book Online <BookIcons />
           </Button>
         </div>
-        <div className="absolute -top-1/2 right-5">
+        <div className="xl:absolute -top-1/2 right-5 ">
           <DiamondPackagesFeatures></DiamondPackagesFeatures>
         </div>
         <div className="absolute -top-80 ">

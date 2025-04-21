@@ -1,4 +1,10 @@
-import { Check } from "lucide-react"
+"use client";
+import {
+  childrenVariants,
+  parentVariants,
+} from "@/animation/FramerMotionValiants";
+import { Check } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function PhotoBoothPromo() {
   return (
@@ -14,9 +20,7 @@ export default function PhotoBoothPromo() {
           <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold  leading-tight font-playfair">
             Join The Smart Start{" "}
             <span className="relative inline-block">
-              <span className="absolute -left-6 top-1/2 transform -translate-y-1/2">
-               
-              </span>
+              <span className="absolute -left-6 top-1/2 transform -translate-y-1/2"></span>
               Photo Booth
             </span>{" "}
             Family
@@ -24,22 +28,40 @@ export default function PhotoBoothPromo() {
 
           {/* Description */}
           <p className="text-sm md:text-base lg:text-lg  max-w-2xl">
-            "With a Photo Booth, you're not just getting photos—you're getting a premium experience! Our friendly team
-            and high-quality images ensure you're well taken care of."
+            "With a Photo Booth, you're not just getting photos—you're getting a
+            premium experience! Our friendly team and high-quality images ensure
+            you're well taken care of."
           </p>
         </div>
 
         {/* Features List */}
-        <div className="space-y-3 md:space-y-4 pt-2">
-          <FeatureItem text="Capture Your Best Self in Stunning Photos" />
-          <FeatureItem text="Photo Booth Host Ensures Guests Shine" />
-          <FeatureItem text="Custom Graphic Overlays Just for You" />
-          <FeatureItem text="Pro-Level Studio Lighting for Flawless Shots" />
-          <FeatureItem text="Instant Photo Keepsakes in Seconds" />
-        </div>
+        <motion.div
+          variants={parentVariants}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true }}
+          className="space-y-3 md:space-y-4 pt-2"
+        >
+          <motion.div variants={childrenVariants}>
+            <FeatureItem text="Capture Your Best Self in Stunning Photos" />
+          </motion.div>
+          <motion.div variants={childrenVariants}>
+            <FeatureItem text="Photo Booth Host Ensures Guests Shine" />
+          </motion.div>
+          <motion.div variants={childrenVariants}>
+            <FeatureItem text="Custom Graphic Overlays Just for You" />
+          </motion.div>
+          <motion.div variants={childrenVariants}>
+            <FeatureItem text="Pro-Level Studio Lighting for Flawless Shots" />
+          </motion.div>
+          <motion.div variants={childrenVariants}>
+            <FeatureItem text="Instant Photo Keepsakes in Seconds" />
+          </motion.div>
+        </motion.div>
       </div>
     </div>
-  )
+  );
 }
 
 function FeatureItem({ text }: { text: string }) {
@@ -50,5 +72,5 @@ function FeatureItem({ text }: { text: string }) {
       </div>
       <span className="text-sm md:text-base ">{text}</span>
     </div>
-  )
+  );
 }
