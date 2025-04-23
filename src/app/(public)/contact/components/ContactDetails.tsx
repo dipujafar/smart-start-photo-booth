@@ -33,7 +33,6 @@ export default function ContactDetails() {
               </div>
             </div>
           </div>
-
           <div className="flex items-center  flex-wrap">
             <div className="w-48 text-[#333] font-medium">Email:</div>
             <div className="flex items-center gap-2">
